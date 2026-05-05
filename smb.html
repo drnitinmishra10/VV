@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sanskaar Mishra!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 50px 40px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 70%);
+            animation: shimmer 8s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .balloons {
+            font-size: 60px;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: 3.2em;
+            color: #764ba2;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .name {
+            font-size: 2.5em;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 15px 0;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 1;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 3px 3px 6px rgba(0,0,0,0.15), 0 0 20px rgba(231,76,60,0.3); }
+            to { text-shadow: 3px 3px 6px rgba(0,0,0,0.15), 0 0 40px rgba(231,76,60,0.6); }
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        .photo-frame {
+            width: 260px;
+            height: 320px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border: 5px solid #fff;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-placeholder {
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .invite-section {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            border: 3px dashed #e74c3c;
+            position: relative;
+            z-index: 1;
+        }
+
+        .invite-section h2 {
+            color: #c0392b;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .invite-text {
+            font-size: 1.3em;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+
+        .time-highlight {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 10px 0;
+            box-shadow: 0 5px 15px rgba(231,76,60,0.4);
+        }
+
+        .date-highlight {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 10px 5px;
+            box-shadow: 0 5px 15px rgba(118,75,162,0.4);
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            animation: confetti-fall linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes confetti-fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 1.1em;
+            color: #7f8c8d;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stars {
+            font-size: 30px;
+            margin: 10px 0;
+            animation: twinkle 1.5s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            from { opacity: 0.5; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1.1); }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <!-- Confetti elements -->
+    <div class="confetti" style="left: 10%; background: #ff6b6b; animation-duration: 3s; animation-delay: 0s;"></div>
+    <div class="confetti" style="left: 20%; background: #feca57; animation-duration: 4s; animation-delay: 1s;"></div>
+    <div class="confetti" style="left: 30%; background: #48dbfb; animation-duration: 3.5s; animation-delay: 0.5s;"></div>
+    <div class="confetti" style="left: 40%; background: #ff9ff3; animation-duration: 5s; animation-delay: 2s;"></div>
+    <div class="confetti" style="left: 50%; background: #54a0ff; animation-duration: 3s; animation-delay: 1.5s;"></div>
+    <div class="confetti" style="left: 60%; background: #5f27cd; animation-duration: 4.5s; animation-delay: 0.8s;"></div>
+    <div class="confetti" style="left: 70%; background: #00d2d3; animation-duration: 3.2s; animation-delay: 2.2s;"></div>
+    <div class="confetti" style="left: 80%; background: #ff9f43; animation-duration: 4s; animation-delay: 1.2s;"></div>
+    <div class="confetti" style="left: 90%; background: #ee5a24; animation-duration: 3.8s; animation-delay: 0.3s;"></div>
+    <div class="confetti" style="left: 15%; background: #a29bfe; animation-duration: 5s; animation-delay: 3s;"></div>
+    <div class="confetti" style="left: 45%; background: #fd79a8; animation-duration: 3.5s; animation-delay: 2.5s;"></div>
+    <div class="confetti" style="left: 75%; background: #e17055; animation-duration: 4.2s; animation-delay: 1.8s;"></div>
+
+    <div class="card">
+        <div class="balloons">🎈🎂🎈</div>
+        <h1>Happy Birthday</h1>
+        <div class="name">Sanskaar Mishra</div>
+        <div class="stars">✨ 🎉 🎊 ✨</div>
+
+        <div class="photos">
+            <div class="photo-frame">
+                <img src="s1.jpg" alt="Sanskaar Mishra - Photo 1" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'photo-placeholder\'>📷<br>s1.jpg<br>Please place image here</div>';">
+            </div>
+            <div class="photo-frame">
+                <img src="s2.jpg" alt="Sanskaar Mishra - Photo 2" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'photo-placeholder\'>📷<br>s2.jpg<br>Please place image here</div>';">
+            </div>
+        </div>
+
+        <div class="invite-section">
+            <h2>🎊 You're Invited! 🎊</h2>
+            <div class="invite-text">
+                Dear Guests,<br><br>
+                We warmly welcome you to join us in celebrating<br>
+                <strong>Sanskaar Mishra's</strong> special day!<br><br>
+                <span class="time-highlight">🕢 7:30 PM</span><br>
+                <span class="date-highlight">📅 Today</span>
+                <span class="date-highlight">5th May 2026</span><br><br>
+                Come make this evening memorable with us!<br>
+                <span style="font-size: 1.5em;">🎁 🎂 🥳 🎉</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            Wishing you a wonderful celebration!<br>
+            <span style="font-size: 1.3em;">💖 🎂 🎈</span>
+        </div>
+    </div>
+</body>
+</html>
