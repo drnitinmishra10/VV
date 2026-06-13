@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table { border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11px; }
+  th { background-color: #1a5276; color: white; padding: 8px; text-align: left; border: 1px solid #ddd; position: sticky; top: 0; }
+  td { padding: 6px; border: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background-color: #f2f8ff; }
+  tr:hover { background-color: #d6eaf8; }
+  .city-header { background-color: #2874a6; color: white; font-weight: bold; font-size: 12px; }
+  .deemed { color: #8e44ad; font-weight: bold; }
+  .pvt-uni { color: #c0392b; font-weight: bold; }
+  .pvt-col { color: #27ae60; }
+  .course-tag { display: inline-block; padding: 1px 5px; margin: 1px; border-radius: 2px; font-size: 9px; font-weight: bold; }
+  .btech { background-color: #e8f6f3; color: #1e8449; border: 1px solid #1e8449; }
+  .bpharma { background-color: #fef9e7; color: #b7950b; border: 1px solid #b7950b; }
+  .contact-box { font-size: 10px; line-height: 1.4; }
+  .id-tag { background-color: #34495e; color: white; padding: 1px 4px; border-radius: 2px; font-size: 9px; }
+</style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 10%;">City</th>
+      <th style="width: 5%;">ID</th>
+      <th style="width: 28%;">College/University Name</th>
+      <th style="width: 10%;">Type</th>
+      <th style="width: 17%;">Courses</th>
+      <th style="width: 30%;">Email / Phone / Website for Admission</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- AGRA -->
+    <tr class="city-header">
+      <td colspan="6">AGRA</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Agra</td>
+      <td><span class="id-tag">001</span></td>
+      <td>Anand Engineering College</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> anandengineering.in<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">004</span></td>
+      <td>Raja Balwant Singh Engineering Technical Campus</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> rbsgroup.edu.in<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">006</span></td>
+      <td>Agra Public Institute Of Technology & Computer Education</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">798</span></td>
+      <td>Anand College Of Architecture</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+
+    <!-- ALIGARH -->
+    <tr class="city-header">
+      <td colspan="6">ALIGARH</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Aligarh</td>
+      <td><span class="id-tag">109</span></td>
+      <td>Aligarh College Of Engineering & Technology (ACET)</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> acetup.org<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">339</span></td>
+      <td>Acn College Of Engineering & Management Studies</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">340</span></td>
+      <td>Vivekananda College Of Technology & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+
+    <!-- PRAYAGRAJ (ALLAHABAD) -->
+    <tr class="city-header">
+      <td colspan="6">PRAYAGRAJ (ALLAHABAD)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Prayagraj</td>
+      <td><span class="id-tag">010</span></td>
+      <td>United College Of Engineering & Research</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> united.ac.in<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">110</span></td>
+      <td>Institute Of Engineering & Rural Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">241</span></td>
+      <td>Shambhu Nath Institute Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- AZAMGARH -->
+    <tr class="city-header">
+      <td colspan="6">AZAMGARH</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Azamgarh</td>
+      <td><span class="id-tag">012</span></td>
+      <td>Pharmacy College, Azamgarh</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> pharmacycollegeazamgarh.com<br><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">233</span></td>
+      <td>R.K. Pharmacy College</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- BAGHPAT -->
+    <tr class="city-header">
+      <td colspan="6">BAGHPAT</td>
+    </tr>
+    <tr>
+      <td>Baghpat</td>
+      <td><span class="id-tag">013</span></td>
+      <td>Shri Gopichand College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> sgcp.edu.in<br><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- BAREILLY -->
+    <tr class="city-header">
+      <td colspan="6">BAREILLY</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Bareilly</td>
+      <td><span class="id-tag">014</span></td>
+      <td>Shri Ram Murti Smarak College Of Engg. & Technology (SRMSCET)</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> srms.ac.in<br><b>Annual Fee:</b> ₹1,50,082<br><b>Avg Placement:</b> ₹4.20 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">169</span></td>
+      <td>Rakshapal Bahadur College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">597</span></td>
+      <td>Khandelwal College Of Architecture & Design</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+
+    <!-- BIJNAUR -->
+    <tr class="city-header">
+      <td colspan="6">BIJNAUR</td>
+    </tr>
+    <tr>
+      <td>Bijnaur</td>
+      <td><span class="id-tag">017</span></td>
+      <td>Kunwar Satya Veera College Of Engg. & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+
+    <!-- BULANDSHAHR -->
+    <tr class="city-header">
+      <td colspan="6">BULANDSHAHR</td>
+    </tr>
+    <tr>
+      <td>Bulandshahar</td>
+      <td><span class="id-tag">019</span></td>
+      <td>Marathwada Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+
+    <!-- ETAWAH -->
+    <tr class="city-header">
+      <td colspan="6">ETAWAH</td>
+    </tr>
+    <tr>
+      <td>Etawah</td>
+      <td><span class="id-tag">236</span></td>
+      <td>Sri Madan Lal Institute Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- GONDA -->
+    <tr class="city-header">
+      <td colspan="6">GONDA</td>
+    </tr>
+    <tr>
+      <td>Gonda</td>
+      <td><span class="id-tag">041</span></td>
+      <td>Acharya Narendra Dev College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- GORAKHPUR -->
+    <tr class="city-header">
+      <td colspan="6">GORAKHPUR</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gorakhpur</td>
+      <td><span class="id-tag">120</span></td>
+      <td>Institute Of Technology & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">766</span></td>
+      <td>Purvanchal Institute Of Architecture & Design</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+
+    <!-- GHAZIABAD -->
+    <tr class="city-header">
+      <td colspan="6">GHAZIABAD</td>
+    </tr>
+    <tr>
+      <td rowspan="11">Ghaziabad</td>
+      <td><span class="id-tag">027</span></td>
+      <td>Ajay Kumar Garg Engineering College (AKGEC)</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">CSE</span> <span class="course-tag btech">ME</span> <span class="course-tag btech">ECE</span> <span class="course-tag btech">EE</span></td>
+      <td class="contact-box"><b>Website:</b> akgec.ac.in<br><b>Total Fee:</b> ₹4.75L (4 Yrs)<br><b>Avg Placement:</b> ₹5.5 LPA<br><b>Highest:</b> ₹33L+ LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">028</span></td>
+      <td>Ideal Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">029</span></td>
+      <td>KIET Group Of Institutions (Krishna Instt. Of Engg. & Technology)</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> kiet.edu<br><b>Phone:</b> 01232-227560<br><b>Total Fee:</b> ₹4.86L (4 Yrs)<br><b>Avg Placement:</b> ₹6.30 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">030</span></td>
+      <td>Inderprastha Engineering College (IPEC)</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> ipec.org.in<br><b>Avg Placement:</b> ₹6.04 LPA<br><b>Highest:</b> ₹35 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">032</span></td>
+      <td>ABES Engineering College</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> abes.ac.in<br><b>Total Fee:</b> ₹4.64L (4 Yrs)<br><b>Avg Placement:</b> ₹5.27 LPA<br><b>Highest:</b> ₹59.9 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">033</span></td>
+      <td>Raj Kumar Goel Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">035</span></td>
+      <td>Babu Banarsi Das Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">038</span></td>
+      <td>Institute Of Technology & Science</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">170</span></td>
+      <td>I.T.S. College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">245</span></td>
+      <td>HR Institute Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">327</span></td>
+      <td>Sunder Deep College Of Architecture</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+
+    <!-- GAUTAM BUDDH NAGAR (NOIDA / GREATER NOIDA) -->
+    <tr class="city-header">
+      <td colspan="6">GAUTAM BUDDH NAGAR (NOIDA / GREATER NOIDA)</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Noida / Greater Noida</td>
+      <td><span class="id-tag">088</span></td>
+      <td>Apeejay Institute Of Technology School Of Architecture And Planning</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">090</span></td>
+      <td>I.E.C. College Of Engineering & Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">132</span></td>
+      <td>Greater Noida Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">133</span></td>
+      <td>Noida Institute Of Engineering & Technology (NIET)</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">CSE</span> <span class="course-tag btech">AI</span> <span class="course-tag btech">IoT</span></td>
+      <td class="contact-box"><b>Website:</b> niet.co.in<br><b>Annual Fee:</b> ₹1,55,000 - ₹1,79,100<br><b>Avg Placement:</b> ₹6.5 LPA<br><b>Highest:</b> ₹51 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">150</span></td>
+      <td>IILM Academy Of Higher Learning, College Of Engg. & Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">214</span></td>
+      <td>HIMT College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">247</span></td>
+      <td>IIMT College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">805</span></td>
+      <td>Accurate Institute Of Architecture & Planning</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Amity University, Noida</td>
+      <td class="deemed">Deemed University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> amity.edu<br><b>Phone:</b> 0120-4392000<br><b>Total Fee:</b> ₹14L - ₹17L (4 Yrs)<br><b>Avg Placement:</b> ₹9.6 LPA<br><b>Admission:</b> JEE Mains / CUET / Direct</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Jaypee Institute of Information Technology (JIIT)</td>
+      <td class="deemed">Deemed University</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> jiit.ac.in<br><b>Total Fee:</b> ₹12.5L - ₹16.02L (4 Yrs)<br><b>Avg Placement:</b> ₹11.49 LPA<br><b>Highest:</b> ₹62 LPA<br><b>Admission:</b> JEE Mains / Direct</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Shiv Nadar University</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">AI</span> <span class="course-tag btech">Data Science</span></td>
+      <td class="contact-box"><b>Website:</b> snu.edu.in<br><b>Total Fee:</b> ₹16.9L - ₹22.9L (4 Yrs)<br><b>Avg Placement:</b> ₹9.81 LPA<br><b>Admission:</b> JEE Mains / SNU Entrance</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Bennett University</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">CSE</span> <span class="course-tag btech">AI</span></td>
+      <td class="contact-box"><b>Website:</b> bennett.edu.in<br><b>Address:</b> Plot 8-11, TechZone II, Greater Noida 201310<br><b>Admission:</b> JEE Mains / Bennett Entrance</td>
+    </tr>
+
+    <!-- KANPUR -->
+    <tr class="city-header">
+      <td colspan="6">KANPUR</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Kanpur</td>
+      <td><span class="id-tag">046</span></td>
+      <td>Maharana Pratap Engineering College</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">200</span></td>
+      <td>Maharana Pratap College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">246</span></td>
+      <td>Dayanand Deenanath College, Institute Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">721</span></td>
+      <td>Axis Institute Of Architecture</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+
+    <!-- LUCKNOW -->
+    <tr class="city-header">
+      <td colspan="6">LUCKNOW</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Lucknow</td>
+      <td><span class="id-tag">053</span></td>
+      <td>Azad Institute Of Engineering & Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> azadinstitute.com<br><b>Total Fee:</b> ₹2.0L - ₹3.0L (4 Yrs)<br><b>Avg Placement:</b> ₹3.0 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">054</span></td>
+      <td>B.B.D National Institute Of Tech. & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> bbdnitm.ac.in<br><b>Highest Package:</b> ₹44 LPA<br><b>Avg Placement:</b> ₹4.20 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">056</span></td>
+      <td>Babu Banarasi Das Northern India Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">057</span></td>
+      <td>International Institute For Special Education (IISE)</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">058</span></td>
+      <td>Institute Of Environment & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">122</span></td>
+      <td>Shri Ramswaroop College Of Engineering & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">123</span></td>
+      <td>Saroj Institute Of Technology & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">163</span></td>
+      <td>Dr. M.C. Saxena College Of Engineering & Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">189</span></td>
+      <td>Central Institute Of Plastic Engineering & Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">196</span></td>
+      <td>College Of Engineering, Science & Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">197</span></td>
+      <td>Azad Institute Of Pharmacy & Research</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">202</span></td>
+      <td>Hygia Institute Of Pharmaceutical Education And Research</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">203</span></td>
+      <td>Rameshwaram Institute Of Technology & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> rameshwaraminstitute.org<br><b>Total Fee:</b> ₹3.21L - ₹3.51L (4 Yrs)<br><b>Avg Placement:</b> ₹4.75 - ₹6.75 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">360</span></td>
+      <td>Goel Institute Of Technology & Management</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> goel.edu.in<br><b>Total Fee:</b> ₹3.14L (4 Yrs)<br><b>Avg Placement:</b> ₹3.50 LPA<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Lucknow (Cont.)</td>
+      <td><span class="id-tag">361</span></td>
+      <td>R.R. Institute Of Modern Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">362</span></td>
+      <td>Lucknow Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> litlucknow.ac.in<br><b>Total Fee:</b> ₹2.0L - ₹2.5L (4 Yrs)<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">363</span></td>
+      <td>Ambalika Institute Of Management & Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">391</span></td>
+      <td>Mahatma Gandhi Institute Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">392</span></td>
+      <td>Goel Institute Of Pharmacy & Sciences</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">672</span></td>
+      <td>ITM School Of Architecture & Town Planning</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+
+    <!-- MATHURA -->
+    <tr class="city-header">
+      <td colspan="6">MATHURA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mathura</td>
+      <td><span class="id-tag">066</span></td>
+      <td>Rajeev Academy For Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">126</span></td>
+      <td>Sachdeva Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+
+    <!-- MEERUT -->
+    <tr class="city-header">
+      <td colspan="6">MEERUT</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Meerut</td>
+      <td><span class="id-tag">127</span></td>
+      <td>I.I.M.T. Engineering College</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">128</span></td>
+      <td>Bharat Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> bharatividyapeeth.edu.in<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">129</span></td>
+      <td>Fort Institute Of Technology</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">201</span></td>
+      <td>NKBR College Of Pharmacy & Research Center</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">206</span></td>
+      <td>Translam Institute Of Pharmaceutical Education & Research</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- MUZAFFARNAGAR -->
+    <tr class="city-header">
+      <td colspan="6">MUZAFFARNAGAR</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Muzaffarnagar</td>
+      <td><span class="id-tag">136</span></td>
+      <td>S.D. College Of Pharmacy And Vocational Studies</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">219</span></td>
+      <td>Bhagawant Institute Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- SAHARANPUR -->
+    <tr class="city-header">
+      <td colspan="6">SAHARANPUR</td>
+    </tr>
+    <tr>
+      <td>Saharanpur</td>
+      <td><span class="id-tag">811</span></td>
+      <td>Forth Dimension College Of Architecture</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Arch</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC (NATA) / Direct</td>
+    </tr>
+
+    <!-- SULTANPUR -->
+    <tr class="city-header">
+      <td colspan="6">SULTANPUR</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sultanpur</td>
+      <td><span class="id-tag">167</span></td>
+      <td>Rajarshi Rananjay Singh College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">168</span></td>
+      <td>Smt. Vidyawati College Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- VARANASI -->
+    <tr class="city-header">
+      <td colspan="6">VARANASI</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Varanasi</td>
+      <td><span class="id-tag">106</span></td>
+      <td>School Of Management Sciences (SMS Varanasi)</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> smsvaranasi.com<br><b>Admission:</b> UPTAC (JEE Rank) / Direct</td>
+    </tr>
+    <tr>
+      <td><span class="id-tag">205</span></td>
+      <td>Shri Harish Chandra Post Graduate College, Institute Of Pharmacy</td>
+      <td class="pvt-col">Private (AKTU)</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Admission:</b> UPTAC / Direct</td>
+    </tr>
+
+    <!-- DEEMED / PRIVATE UNIVERSITIES (Not AKTU Affiliated) -->
+    <tr class="city-header">
+      <td colspan="6">DEEMED / PRIVATE UNIVERSITIES (Not AKTU Affiliated - Self-Governing)</td>
+    </tr>
+    <tr>
+      <td>Noida</td>
+      <td>-</td>
+      <td>Amity University, Noida</td>
+      <td class="deemed">Deemed University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> amity.edu<br><b>Phone:</b> 0120-4392000<br><b>Total Fee:</b> ₹14L - ₹17L (4 Yrs)<br><b>Avg Placement:</b> ₹9.6 LPA<br><b>Admission:</b> JEE Mains / CUET / Direct</td>
+    </tr>
+    <tr>
+      <td>Noida</td>
+      <td>-</td>
+      <td>Jaypee Institute of Information Technology (JIIT)</td>
+      <td class="deemed">Deemed University</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> jiit.ac.in<br><b>Total Fee:</b> ₹12.5L - ₹16.02L (4 Yrs)<br><b>Avg Placement:</b> ₹11.49 LPA<br><b>Highest:</b> ₹62 LPA<br><b>Admission:</b> JEE Mains / Direct</td>
+    </tr>
+    <tr>
+      <td>Greater Noida</td>
+      <td>-</td>
+      <td>Shiv Nadar University</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">AI</span> <span class="course-tag btech">Data Science</span></td>
+      <td class="contact-box"><b>Website:</b> snu.edu.in<br><b>Total Fee:</b> ₹16.9L - ₹22.9L (4 Yrs)<br><b>Avg Placement:</b> ₹9.81 LPA<br><b>Admission:</b> JEE Mains / SNU Entrance</td>
+    </tr>
+    <tr>
+      <td>Greater Noida</td>
+      <td>-</td>
+      <td>Galgotias University</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">CSE</span> <span class="course-tag btech">AI-ML</span></td>
+      <td class="contact-box"><b>Website:</b> galgotiasuniversity.edu.in<br><b>Total Fee:</b> ₹6L - ₹8L (4 Yrs)<br><b>Avg Placement:</b> ₹5.25 LPA<br><b>Admission:</b> CUET / Direct</td>
+    </tr>
+    <tr>
+      <td>Greater Noida</td>
+      <td>-</td>
+      <td>Sharda University</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">CSE</span> <span class="course-tag btech">IT</span></td>
+      <td class="contact-box"><b>Website:</b> sharda.ac.in<br><b>Total Fee:</b> ₹7L - ₹12L (4 Yrs)<br><b>Avg Placement:</b> ₹5.0 LPA<br><b>Highest:</b> ₹1 Cr+ (International)<br><b>Admission:</b> CUET / Sharda Entrance</td>
+    </tr>
+    <tr>
+      <td>Greater Noida</td>
+      <td>-</td>
+      <td>Bennett University</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">CSE</span> <span class="course-tag btech">AI</span></td>
+      <td class="contact-box"><b>Website:</b> bennett.edu.in<br><b>Address:</b> Plot 8-11, TechZone II, Greater Noida 201310<br><b>Admission:</b> JEE Mains / Bennett Entrance</td>
+    </tr>
+    <tr>
+      <td>Lucknow</td>
+      <td>-</td>
+      <td>Babu Banarasi Das University (BBDU)</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">CSE</span> <span class="course-tag btech">ECE</span></td>
+      <td class="contact-box"><b>Website:</b> bbduniversity.ac.in<br><b>Total Fee:</b> ₹5L - ₹7.03L (4 Yrs)<br><b>Avg Placement:</b> ₹5.50 LPA<br><b>Admission:</b> JEE Mains / Direct</td>
+    </tr>
+    <tr>
+      <td>Lucknow</td>
+      <td>-</td>
+      <td>Integral University</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> integraluniversity.ac.in<br><b>Total Fee:</b> ₹5L - ₹10.21L (4 Yrs)<br><b>Avg Placement:</b> ₹3.5 - ₹4.0 LPA<br><b>Admission:</b> JEE Mains / Direct</td>
+    </tr>
+    <tr>
+      <td>Lucknow</td>
+      <td>-</td>
+      <td>Shri Ramswaroop Memorial University (SRMU)</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span></td>
+      <td class="contact-box"><b>Website:</b> srmu.ac.in<br><b>Total Fee:</b> ₹4.5L - ₹7L (4 Yrs)<br><b>Avg Placement:</b> ₹5.0 LPA<br><b>Admission:</b> JEE Mains / Direct</td>
+    </tr>
+    <tr>
+      <td>Lucknow</td>
+      <td>-</td>
+      <td>Chandigarh University Uttar Pradesh (CU UP)</td>
+      <td class="pvt-uni">Private University</td>
+      <td><span class="course-tag btech">B.Tech</span> <span class="course-tag btech">CSE</span> <span class="course-tag btech">AI</span></td>
+      <td class="contact-box"><b>Website:</b> culko.in / cuup.ac.in<br><b>Annual Fee:</b> ₹1.5L - ₹1.8L<br><b>Admission:</b> CUCET / JEE Mains</td>
+    </tr>
+    <tr>
+      <td>Prayagraj</td>
+      <td>-</td>
+      <td>SHUATS (Sam Higginbottom University)</td>
+      <td class="deemed">Deemed University</td>
+      <td><span class="course-tag bpharma">B.Pharma</span></td>
+      <td class="contact-box"><b>Website:</b> shuats.edu.in<br><b>NIRF Rank 2023:</b> #70<br><b>Admission:</b> Own entrance test / Direct</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
