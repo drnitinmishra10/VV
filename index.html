@@ -1,0 +1,230 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --y50: #FAEEDA; --y100: #FAC775; --y200: #EF9F27;
+  --y400: #BA7517; --y600: #854F0B; --y800: #633806; --y900: #412402;
+}
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 32px; border-bottom: 0.5px solid var(--color-border-tertiary); background: var(--color-background-primary); position: sticky; top: 0; z-index: 10; }
+.logo { font-size: 20px; font-weight: 500; letter-spacing: -0.4px; }
+.logo .v1 { color: var(--y200); } .logo .v2 { color: var(--y600); }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { font-size: 14px; color: var(--color-text-secondary); text-decoration: none; }
+.nav-cta { background: var(--y200); color: var(--y900) !important; padding: 8px 18px; border-radius: var(--border-radius-md); font-size: 14px; text-decoration: none; font-weight: 500; }
+.hero { padding: 72px 32px 56px; text-align: center; background: var(--y50); }
+.badge { display: inline-flex; align-items: center; gap: 6px; background: var(--y100); color: var(--y800); font-size: 12px; font-weight: 500; padding: 5px 14px; border-radius: 999px; margin-bottom: 24px; }
+.hero h1 { font-size: 36px; font-weight: 500; line-height: 1.25; max-width: 680px; margin: 0 auto 20px; color: var(--color-text-primary); }
+.hero h1 em { color: var(--y600); font-style: normal; }
+.hero p { font-size: 16px; color: var(--color-text-secondary); max-width: 520px; margin: 0 auto 36px; line-height: 1.7; }
+.hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn-primary { background: var(--y200); color: var(--y900); padding: 12px 28px; border-radius: var(--border-radius-md); font-size: 15px; font-weight: 500; cursor: pointer; border: none; }
+.btn-secondary { background: transparent; color: var(--y600); border: 0.5px solid var(--y200); padding: 12px 28px; border-radius: var(--border-radius-md); font-size: 15px; cursor: pointer; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; max-width: 800px; margin: 48px auto 0; padding: 0 32px; }
+.stat { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 20px 16px; text-align: center; }
+.stat-num { font-size: 26px; font-weight: 500; color: var(--y600); }
+.stat-label { font-size: 12px; color: var(--color-text-secondary); margin-top: 4px; }
+.section { padding: 56px 32px; }
+.section-label { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--y600); margin-bottom: 10px; }
+.section-title { font-size: 26px; font-weight: 500; max-width: 480px; line-height: 1.3; margin-bottom: 8px; }
+.section-sub { font-size: 15px; color: var(--color-text-secondary); max-width: 480px; line-height: 1.7; margin-bottom: 36px; }
+.how-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.step-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 24px 20px; }
+.step-num { width: 32px; height: 32px; background: var(--y100); color: var(--y800); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; margin-bottom: 16px; }
+.step-card h3 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+.step-card p { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+.services { background: var(--color-background-secondary); }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.service-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 22px 18px; }
+.service-icon { width: 40px; height: 40px; background: var(--y50); border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; color: var(--y600); font-size: 20px; border: 0.5px solid var(--y100); }
+.service-card h3 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+.service-card p { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+.free-badge { display: inline-block; background: var(--y100); color: var(--y800); font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 999px; margin-top: 12px; }
+.why-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; max-width: 900px; margin: 0 auto; }
+.why-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.why-item { display: flex; align-items: flex-start; gap: 14px; }
+.why-dot { width: 8px; height: 8px; background: var(--y200); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+.why-item p { font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; }
+.why-item strong { display: block; font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 3px; }
+.why-visual { background: var(--y50); border-radius: var(--border-radius-lg); padding: 28px; border: 0.5px solid var(--y100); }
+.why-visual-title { font-size: 14px; font-weight: 500; color: var(--y800); margin-bottom: 18px; }
+.compare-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 0.5px solid var(--y100); font-size: 13px; color: var(--color-text-primary); }
+.compare-row:last-child { border-bottom: none; }
+.yes-mark { color: var(--y600); font-weight: 500; }
+.no-mark { color: #993C1D; font-weight: 500; }
+.video-section { background: var(--color-background-secondary); }
+.video-card { max-width: 600px; margin: 0 auto; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+.video-placeholder { background: var(--y50); height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; cursor: pointer; border-bottom: 0.5px solid var(--y100); }
+.play-btn { width: 56px; height: 56px; background: var(--y200); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--y900); font-size: 22px; }
+.video-meta { padding: 20px 24px; }
+.video-meta h3 { font-size: 16px; font-weight: 500; margin-bottom: 6px; }
+.video-meta p { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+.cta-strip { background: var(--y200); padding: 56px 32px; text-align: center; }
+.cta-strip h2 { font-size: 28px; font-weight: 500; color: var(--y900); margin-bottom: 12px; }
+.cta-strip p { font-size: 15px; color: var(--y800); max-width: 480px; margin: 0 auto 28px; line-height: 1.7; }
+.btn-dark { background: var(--y900); color: var(--y50); padding: 13px 30px; border-radius: var(--border-radius-md); font-size: 15px; font-weight: 500; display: inline-block; cursor: pointer; border: none; }
+.footer { padding: 40px 32px; border-top: 0.5px solid var(--color-border-tertiary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-logo { font-size: 16px; font-weight: 500; }
+.footer-logo .v1 { color: var(--y200); } .footer-logo .v2 { color: var(--y600); }
+.footer-links { display: flex; gap: 20px; }
+.footer-links a { font-size: 13px; color: var(--color-text-secondary); text-decoration: none; }
+.footer-note { font-size: 12px; color: var(--color-text-tertiary); }
+@media (max-width: 600px) { .why-wrap { grid-template-columns: 1fr; } .nav-links { display: none; } }
+</style>
+
+<h2 style="position:absolute;left:-9999px;">VidyaVive — Free education consultancy for students across India</h2>
+
+<nav class="nav">
+  <div class="logo"><span class="v1">Vidya</span><span class="v2">Vive</span></div>
+  <div class="nav-links">
+    <a href="#">How it works</a>
+    <a href="#">Services</a>
+    <a href="#">Universities</a>
+    <a href="#">About</a>
+    <a href="#" class="nav-cta">Book free call</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="badge"><i class="ti ti-shield-check" aria-hidden="true"></i> 100% free — no hidden charges</div>
+  <h1>Honest guidance for your <em>education journey</em></h1>
+  <p>Expert consultants and top university professors help you choose the right course and college — on a free video call, from wherever you are in India.</p>
+  <div class="hero-btns">
+    <button class="btn-primary" onclick="sendPrompt('I want to book a free consultation with VidyaVive')"><i class="ti ti-video" aria-hidden="true"></i> Book a free video call ↗</button>
+    <button class="btn-secondary" onclick="sendPrompt('Tell me more about VidyaVive services')">Learn how it works</button>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Partner colleges</div></div>
+  <div class="stat"><div class="stat-num">₹0</div><div class="stat-label">Consultation fee</div></div>
+  <div class="stat"><div class="stat-num">28</div><div class="stat-label">States covered</div></div>
+  <div class="stat"><div class="stat-num">10k+</div><div class="stat-label">Students guided</div></div>
+</div>
+
+<section class="section">
+  <div class="section-label">How it works</div>
+  <div class="section-title">From confusion to admission — in 4 steps</div>
+  <div class="section-sub">No travel, no wasted fees. Get everything confirmed before you ever leave home.</div>
+  <div class="how-grid">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <h3>Register free</h3>
+      <p>Sign up in minutes. Share your interests, location, and goals.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <h3>Get matched</h3>
+      <p>We connect you with an IT expert or university professor suited to your field.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <h3>Free video call</h3>
+      <p>Get unbiased information on placement, faculty, fees, and accreditation — no brochure talk.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <h3>Admission from home</h3>
+      <p>We handle everything remotely. Move only after your seat is confirmed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section services">
+  <div class="section-label">What we offer</div>
+  <div class="section-title">All the support you need, at zero cost</div>
+  <div class="section-sub">We earn through verified tie-ups with institutions — never from students.</div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-school" aria-hidden="true"></i></div>
+      <h3>Course counselling</h3>
+      <p>Find the stream, degree, or diploma that truly fits your aptitude and goals.</p>
+      <span class="free-badge">Free</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-building-community" aria-hidden="true"></i></div>
+      <h3>College shortlisting</h3>
+      <p>Matched to your budget, location, rank, and real placement track record.</p>
+      <span class="free-badge">Free</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-video" aria-hidden="true"></i></div>
+      <h3>Video call with professors</h3>
+      <p>Speak directly with faculty from top institutions — get real answers.</p>
+      <span class="free-badge">Free</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-discount-2" aria-hidden="true"></i></div>
+      <h3>Exclusive fee discounts</h3>
+      <p>Students admitted through VidyaVive get special discounts at partner universities.</p>
+      <span class="free-badge">Verified tie-ups</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-file-description" aria-hidden="true"></i></div>
+      <h3>Remote admission support</h3>
+      <p>We handle paperwork and coordination — finalize everything from your city.</p>
+      <span class="free-badge">Free</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-certificate" aria-hidden="true"></i></div>
+      <h3>Accreditation check</h3>
+      <p>We verify NAAC grades, NBA status, and real placement data — no inflated numbers.</p>
+      <span class="free-badge">Verified</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="why-wrap">
+    <div>
+      <div class="section-label">Why VidyaVive</div>
+      <div class="section-title">We have no reason to mislead you</div>
+      <div class="section-sub">Colleges pay us only after you join — so our only incentive is finding the right fit for you.</div>
+      <ul class="why-list">
+        <li class="why-item"><div class="why-dot"></div><div><strong>No fake placement data</strong><p>We independently verify placement records before recommending any institution.</p></div></li>
+        <li class="why-item"><div class="why-dot"></div><div><strong>Save travel cost and time</strong><p>A student in Bihar can confirm admission in Gujarat without leaving home until it's settled.</p></div></li>
+        <li class="why-item"><div class="why-dot"></div><div><strong>IT and professor experts</strong><p>Our consultants combine industry knowledge with academic depth.</p></div></li>
+        <li class="why-item"><div class="why-dot"></div><div><strong>You decide — always</strong><p>We present options, not pressure. The final choice is always yours.</p></div></li>
+      </ul>
+    </div>
+    <div class="why-visual">
+      <div class="why-visual-title">VidyaVive vs direct college visit</div>
+      <div class="compare-row"><span>Unbiased information</span><span class="yes-mark">✓ Yes</span><span class="no-mark">✗ No</span></div>
+      <div class="compare-row"><span>Travel required</span><span class="yes-mark">✓ No</span><span class="no-mark">✗ Yes</span></div>
+      <div class="compare-row"><span>Placement verified</span><span class="yes-mark">✓ Yes</span><span class="no-mark">✗ No</span></div>
+      <div class="compare-row"><span>Fee discount</span><span class="yes-mark">✓ Yes</span><span class="no-mark">✗ No</span></div>
+      <div class="compare-row"><span>Cost to student</span><span class="yes-mark">✓ ₹0</span><span class="no-mark">✗ High</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section video-section">
+  <div class="section-label" style="text-align:center">Success story</div>
+  <div class="section-title" style="text-align:center; margin: 0 auto 32px; max-width:100%">Watch how a student got admitted without leaving Bihar</div>
+  <div class="video-card">
+    <div class="video-placeholder" onclick="sendPrompt('Tell me about a VidyaVive student success story')">
+      <div class="play-btn"><i class="ti ti-player-play" aria-hidden="true"></i></div>
+      <span style="font-size:13px; color: var(--y800); font-weight:500">Watch success story</span>
+    </div>
+    <div class="video-meta">
+      <h3>Rahul, Bihar — admitted to Ahmedabad University</h3>
+      <p>How Rahul confirmed his BBA seat, received a fee waiver, and moved to Gujarat only after his admission letter was in hand — all through a free VidyaVive video call.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Ready to find your right college?</h2>
+  <p>Book a free video call today. No fees, no pressure — just honest guidance you can trust.</p>
+  <button class="btn-dark" onclick="sendPrompt('I want to book a free consultation with VidyaVive')">Book your free consultation →</button>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo"><span class="v1">Vidya</span><span class="v2">Vive</span></div>
+  <div class="footer-links">
+    <a href="#">About</a>
+    <a href="#">Partner colleges</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy</a>
+  </div>
+  <div class="footer-note">© 2025 VidyaVive. All consultations free of charge.</div>
+</footer>
